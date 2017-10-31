@@ -1,4 +1,4 @@
-{ "items": [{
+{ "caves": [{
     "items":[],
     "directions": ["left","right"],
     "creatures": [],

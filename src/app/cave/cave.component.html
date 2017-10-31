@@ -1,0 +1,7 @@
+<h2>Caves</h2>
+
+<div *ngFor="let cave of caves | async" (click)="goToDetailPage(cave)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{cave.story}}</em></h3>
+  </div>
+</div>

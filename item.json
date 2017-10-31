@@ -1,65 +1,143 @@
 { "items": [{
     "name": "Rusty Pickaxe",
     "type": "weapon",
-    "modifier": 2,
-    "clue":"Its more rust than pick...",
-    "id": 1
-    },
+    "modifier": "2",
+    "clue":"Its more rust than pick..."  },
     {
     "name": "Bat Leather Jacket",
     "type": "armor",
-    "modifier": 10,
-    "clue":"Soft.",
-    "id": 2
-    },
+    "modifier": "10",
+    "clue":"Soft."  },
     {
     "name": "Vegan Bacon Cheeseburger",
     "type": "food",
-    "modifier": 10,
-    "clue":"it says '100% vegan' on the wrapper.",
-    "id": 3
-    },
+    "modifier": "10",
+    "clue":"it says '100% vegan' on the wrapper."  },
     {
     "name": "Bagel with cream cheese",
     "type": "food",
-    "modifier": 5,
-    "clue":"has the name 'Javi' written on the wrapper.",
-    "id": 4
-    },
+    "modifier": "5",
+    "clue":"has the name 'Javi' written on the wrapper."  },
     {
     "name": "Barlton's ancient sword",
     "type": "weapon",
-    "modifier": 5,
-    "clue":"Barlton won't be needing this anymore.",
-    "id": 5
-    },
+    "modifier": "5",
+    "clue":"Barlton won't be needing this anymore."  },
     {
     "name": "Filth Filled Boots",
     "type": "armor",
-    "modifier": 2,
-    "clue":"Its more rust than pick...",
-    "id": 6
-    },
+    "modifier": "2",
+    "clue":"Its more rust than pick..."  },
     {
     "name": "Filth Filled Boots",
     "type": "armor",
-    "modifier": 2,
-    "clue":"Looks like someone spewed in their boots",
-    "id": 7
-    },
+    "modifier": "2",
+    "clue":"Looks like someone spewed in their boots"  },
     {
     "name": "a human ribcage",
     "type": "armor",
-    "modifier": 3,
-    "clue":"It still has bits of person on it, but it will make a good chest plate",
-    "id": 8
-    },
+    "modifier": "3",
+    "clue":"It still has bits of person on it, but it will make a good chest plate"  },
     {
     "name": "Mountain Dew",
     "type": "food",
-    "modifier": 7,
-    "clue":"'It'll tickle yore innards' -Willy The Hillbilly",
-    "id": 8
+    "modifier": "7",
+    "clue":"'It'll tickle yore innards' -Willy The Hillbilly"  }
+  ],
+
+  "characters": [{
+    "name": "Dave the Cave Explorer",
+    "story": "Dave decided to go searching for caves, as he loves to explore them in his free time.",
+    "health": "100",
+    "strength":"5",
+    "armor":"0"  },
+    {
+    "name": "Gramantha",
+    "story": "Once an heiress to a whipcream empire, Gramantha turned her back on her privellage and decided to explore caves or something.",
+    "health": "75",
+    "strength":"7",
+    "armor": "10"  },
+    {
+    "name": "Lil Lost Timmy",
+    "story": "He's little. He's lost. He's Timmy.",
+    "health": "120",
+    "strength": "2",
+    "armor": "0"  },
+
+    {
+    "name": "Larry the Woodsman",
+    "story": "A large barrel chested man whos only love is the forest and his dog Juniper. He also likes caves.",
+    "health": "50",
+    "strength":"10",
+    "armor": "20"  },
+    {
+    "name": "Cave Dweller",
+    "story": "You hear a strange sound, much like a child whimpering, or screaming. You don't really know, but it's getting closer.",
+    "health": "20",
+    "strength": "2",
+    "armor": "0"  },
+    {
+    "name": "Facebat",
+    "story": "You hear an undeniable sound, screeching, it's definitely a facebat!",
+    "health": "10",
+    "strength":"4",
+    "armor": "0"  },
+
+    {
+    "name": "Cave Gnome",
+    "story": "You feel a strange sensation on your leg, almost as if a tiny dog brushed your ankles, but then you notice a tiny human-like face, with a dumb pointy hat, Watch out! It's a cave gnome!",
+    "health": "15",
+    "strength":"3",
+    "armor": "3"  },
+    {
+    "name": "Chorgoth the Cave Hippo",
+    "story": "The ground rumbles...It's getting closer..Is it? It can't be...It's Chorgoth the Cave Hippo. He's large and in charge! Prepare for battle!",
+    "health": "30",
+    "strength": "2",
+    "armor": "5"  }
+  ],
+
+  "caves": [{
+    "items":[],
+    "directions": ["left","right"],
+    "creatures": [],
+    "story": "Walking through the forest you see a giant dark cave entrance:"
+    },
+    {
+    "items":[],
+    "directions": ["left","right"],
+    "creatures": [],
+    "story": "As you enter the tunnel you come across a skeleton next to a backpack: "
+    },
+    {
+    "items":[],
+    "directions": ["left","right"],
+    "creatures": [],
+    "story": "As you walk through this side of the cave you enveloped in pure darkness, all you can see is something shiny in the distance"
+    },
+    {
+    "items":[],
+    "directions": ["left","right"],
+    "creatures": [],
+    "story": "You come across what appears to be some kind of nesting ground for an unspeakable creature."
+    },
+    {
+    "items":[],
+    "directions": ["left","right"],
+    "creatures": [],
+    "story": "The sound of dripping water catches your attention, but even more exciting is the sight of a strange chest halfway submerged in a shallow pool."
+    },
+    {
+    "items":[],
+    "directions": ["left","right"],
+    "creatures": [],
+    "story": "It stinks... really bad. The floor is sticky and mushy. You see something sticking out of this disgusting substance."
+    },
+    {
+    "items":[],
+    "directions": ["left","right"],
+    "creatures": [],
+    "story": "You come across a large underground waterfall, It appears to be a dead end but you feel a breeze coming from the direction of the waterfall"
     }
   ]
 }

@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Cave } from './cave.model';
-import { CAVES } from './mock-characters';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 
@@ -13,15 +12,11 @@ export class CaveService {
   }
 
   getCaves() {
-    return CAVES;
+    return this.caves;
   }
 
-  getCaveById(caveId: number){
-    for (var i = 0; i <= CAVES.length - 1; i++) {
-      if (CAVES[i].id === caveId) {
-        return CAVES[i];
-      }
-    }
+  getCaveById(caveId: number) {
+    return this.database.object('caves/'+ caveId);
   }
 
 }

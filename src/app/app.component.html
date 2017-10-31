@@ -7,5 +7,10 @@
     <div class="panel panel-body">
       <p>You emerge out of the thick, moist jungle vegetation and are greeted by a large hole in the ground. As a brave explorer you are ready to tackle the mega spooky cave!</p>
     </div>
+    <div *ngFor="let character of characters | async" (click)="goToDetailPage(character)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{character.name}}</em> by {{character.story}}</h3>
+  </div>
+</div>
   </div>
 </div>

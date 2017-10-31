@@ -1,4 +1,4 @@
-{ "items": [{
+{ "characters": [{
     "name": "Dave the Cave Explorer",
     "story": "Dave decided to go searching for caves, as he loves to explore them in his free time.",
     "health": 100,

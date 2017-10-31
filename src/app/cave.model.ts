@@ -2,17 +2,17 @@ export class Cave {
   public items = [];
   public directions = [];
   public creatures = [];
-  constructor(public story: string, public id: number){};
+  constructor(public story: string, public id: number) {};
 
-  addItems(item){
+  addItems(item) {
     this.items.push(item);
   }
 
-  addDirections(direction){
+  addDirections(direction) {
     this.directions.push(direction);
   }
 
-  addCreatures(creature){
+  addCreatures(creature) {
     this.creatures.push(creature);
   }
 }

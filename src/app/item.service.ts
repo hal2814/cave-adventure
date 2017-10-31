@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Item } from './item.model';
-import { ITEMS } from './mock-characters';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
@@ -11,7 +10,7 @@ export class ItemService {
   }
 
   getItems() {
-    return ITEMS;
+    return this.items;
   }
 
 }
