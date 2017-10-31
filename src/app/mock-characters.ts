@@ -9,7 +9,7 @@ export const ITEMS: Item[] = [
   new Item("Bagel with cream cheese","food",5, "has the name 'Javi' written on the wrapper."),
   new Item("Barlton's ancient sword","weapon",5,"Barlton won't be needing this anymore."),
   new Item("Filth Filled Boots","armor", 2, "Looks like someone spewed in their boots"),
-  new Item("a human skeleton ribcage","armor", 3, "It still has bits of person on it, but it will make a good chest plate"),
+  new Item("a human ribcage","armor", 3, "It still has bits of person on it, but it will make a good chest plate"),
   new Item("Mountain Dew","food",7, "'It'll tickle yore innards' -Willy The Hillbilly")
 ];
 

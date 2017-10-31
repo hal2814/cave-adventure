@@ -1,0 +1,65 @@
+{ "items": [{
+    "name": "Rusty Pickaxe",
+    "type": "weapon",
+    "modifier": 2,
+    "clue":"Its more rust than pick...",
+    "id": 1
+    },
+    {
+    "name": "Bat Leather Jacket",
+    "type": "armor",
+    "modifier": 10,
+    "clue":"Soft.",
+    "id": 2
+    },
+    {
+    "name": "Vegan Bacon Cheeseburger",
+    "type": "food",
+    "modifier": 10,
+    "clue":"it says '100% vegan' on the wrapper.",
+    "id": 3
+    },
+    {
+    "name": "Bagel with cream cheese",
+    "type": "food",
+    "modifier": 5,
+    "clue":"has the name 'Javi' written on the wrapper.",
+    "id": 4
+    },
+    {
+    "name": "Barlton's ancient sword",
+    "type": "weapon",
+    "modifier": 5,
+    "clue":"Barlton won't be needing this anymore.",
+    "id": 5
+    },
+    {
+    "name": "Filth Filled Boots",
+    "type": "armor",
+    "modifier": 2,
+    "clue":"Its more rust than pick...",
+    "id": 6
+    },
+    {
+    "name": "Filth Filled Boots",
+    "type": "armor",
+    "modifier": 2,
+    "clue":"Looks like someone spewed in their boots",
+    "id": 7
+    },
+    {
+    "name": "a human ribcage",
+    "type": "armor",
+    "modifier": 3,
+    "clue":"It still has bits of person on it, but it will make a good chest plate",
+    "id": 8
+    },
+    {
+    "name": "Mountain Dew",
+    "type": "food",
+    "modifier": 7,
+    "clue":"'It'll tickle yore innards' -Willy The Hillbilly",
+    "id": 8
+    }
+  ]
+}
