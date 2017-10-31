@@ -1,7 +1,8 @@
 <h2>Caves</h2>
 
-<div *ngFor="let cave of caves | async" (click)="goToDetailPage(cave)" class="panel panel-default">
+<div *ngFor="let cave of caves | async" class="panel panel-default">
   <div class="panel-body">
-    <h3><em>{{cave.story}}</em></h3>
+    <h3>Story <em>{{cave.story}}</em></h3>
   </div>
+  <router-outlet></router-outlet>
 </div>

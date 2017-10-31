@@ -7,7 +7,8 @@ import { CaveService } from '../cave.service';
 @Component({
   selector: 'app-cave',
   templateUrl: './cave.component.html',
-  styleUrls: ['./cave.component.css']
+  styleUrls: ['./cave.component.css'],
+  providers: [ CaveService ]
 })
 export class CaveComponent implements OnInit {
   caves: FirebaseListObservable<any[]>;
@@ -15,6 +16,7 @@ export class CaveComponent implements OnInit {
 
 
   ngOnInit(){
+    console.log("reached");
     this.caves = this.caveService.getCaves();
   }
 

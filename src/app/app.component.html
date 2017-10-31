@@ -2,15 +2,9 @@
   <h1>{{title}}</h1>
   <div class="well">
     <div class="panel panel-head">
-      <h3>Entrance To A Mega Spooky Cave</h3>
+      <h3>A Spooky Forest</h3>
     </div>
-    <div class="panel panel-body">
-      <p>You emerge out of the thick, moist jungle vegetation and are greeted by a large hole in the ground. As a brave explorer you are ready to tackle the mega spooky cave!</p>
-    </div>
-    <div *ngFor="let character of characters | async" (click)="goToDetailPage(character)" class="panel panel-default">
-  <div class="panel-body">
-    <h3><em>{{character.name}}</em> by {{character.story}}</h3>
-  </div>
-</div>
+  <a routerlink="cave" (click)="goToCave()">Cave Entrance</a>
+  <router-outlet></router-outlet>
   </div>
 </div>

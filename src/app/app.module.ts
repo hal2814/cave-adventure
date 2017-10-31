@@ -9,7 +9,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
 import { CaveComponent } from './cave/cave.component';
-import { CharacterComponent } from './character/character.component';
+import { CharacterDetailComponent } from './character-detail/character-detail.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -23,7 +23,7 @@ export const firebaseConfig = {
     AppComponent,
     AdminComponent,
     CaveComponent,
-    CharacterComponent
+    CharacterDetailComponent
   ],
   imports: [
     BrowserModule,

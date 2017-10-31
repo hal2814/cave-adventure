@@ -2,15 +2,16 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
 import { AppComponent } from './app.component';
+import { CaveComponent } from './cave/cave.component';
 
 const appRoutes: Routes = [
   {
-    path: '',
-    component: AppComponent
-  },
-  {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'cave',
+    component: CaveComponent
   }
  ];
 
