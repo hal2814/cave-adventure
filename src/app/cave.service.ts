@@ -18,5 +18,4 @@ export class CaveService {
   getCaveById(caveId: number) {
     return this.database.object('caves/'+ caveId);
   }
-
 }

@@ -10,15 +10,25 @@ import { CaveService } from '../cave.service';
   styleUrls: ['./cave.component.css'],
   providers: [ CaveService ]
 })
+
 export class CaveComponent implements OnInit {
   caves: FirebaseListObservable<any[]>;
+  caveToDisplay;
+  count;
+
   constructor(private router: Router, private caveService: CaveService) { }
 
 
   ngOnInit(){
-    console.log("reached");
-    this.caves = this.caveService.getCaves();
+    // this.caves = this.caveService.getCaves();
+    this.count = 0;
+    this.caveToDisplay = this.caveService.getCaveById(this.count);
+  };
+
+  chooseDirection(number){
+    this.caveToDisplay = this.caveService.getCaveById(this.count+=number);
   }
+
 
   // goToDetailPage(clickedCave: Cave) {
   //   this.router.navigate(['caves', clickedCave.$key]);
