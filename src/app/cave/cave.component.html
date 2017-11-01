@@ -1,7 +1,6 @@
 <h2>The Caves</h2>
 
-  <h3>{{(caveToDisplay | async).story}}</h3>
-
+  <h3>{{(caveToDisplay | async)?.story}}</h3>
+  <h3>left: {{(caveToDisplay | async)?.left}}</h3>
 <button (click)="chooseDirection(-1)">go back</button>
-<button (click)="chooseDirection(1)">Left</button>
-<button (click)="chooseDirection(2)">Right</button>
+<button (click)="chooseLeft()">Left</button>

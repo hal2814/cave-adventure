@@ -99,45 +99,75 @@
 
   "caves": [{
     "items":[],
-    "directions": ["left","right"],
+    "left": "1",
+    "right":"2",
     "creatures": [],
-    "story": "Walking through the forest you see a giant dark cave entrance:"
+    "story": "Walking through the forest you see a giant dark cave entrance:",
+    "img":"http://1.bp.blogspot.com/-Pn1Z8IvSWnI/UrlT0tt_ktI/AAAAAAAC_h4/fG3AKEFJC_0/s1600/merlin0455.jpg"
     },
     {
     "items":[],
-    "directions": ["left","right"],
+    "left": "3",
+    "right":"4",
     "creatures": [],
-    "story": "As you enter the tunnel you come across a skeleton next to a backpack: "
+    "story": "As you enter the tunnel you come across a skeleton next to a backpack: ",
+    "img": "https://cdnb.artstation.com/p/assets/images/images/000/322/299/large/simon-fetscher-skeleton-cave.jpg?1443926953"
     },
     {
     "items":[],
-    "directions": ["left","right"],
+    "left": "6",
+    "right":"5",
     "creatures": [],
-    "story": "As you walk through this side of the cave you enveloped in pure darkness, all you can see is something shiny in the distance"
+    "story": "As you walk through this side of the cave you enveloped in pure darkness, all you can see is something shiny in the distance",
+    "img":"https://adventuresofacouchsurfer.files.wordpress.com/2011/05/img_1664-valentine-cave.jpg"
     },
     {
     "items":[],
-    "directions": ["left","right"],
+    "left": "8",
+    "right":"7",
     "creatures": [],
-    "story": "You come across what appears to be some kind of nesting ground for an unspeakable creature."
+    "story": "You come across what appears to be some kind of nesting ground for an unspeakable creature.",
+    "img":"https://img00.deviantart.net/feef/i/2005/338/6/c/nargh_the_cave_dweller_by_alex16.jpg"
     },
     {
     "items":[],
-    "directions": ["left","right"],
+    "left": "7",
+    "right":"8",
     "creatures": [],
-    "story": "The sound of dripping water catches your attention, but even more exciting is the sight of a strange chest halfway submerged in a shallow pool."
+    "story": "The sound of dripping water catches your attention, but even more exciting is the sight of a strange chest halfway submerged in a shallow pool.",
+    "img":"https://www.yellowstonepark.com/.image/t_share/MTQ3MzIwMDY5MDUwNzM4MTI2/treasure-chest-cave_adobe_680.jpg"
     },
     {
     "items":[],
-    "directions": ["left","right"],
+    "left": "8",
+    "right":"7",
     "creatures": [],
-    "story": "It stinks... really bad. The floor is sticky and mushy. You see something sticking out of this disgusting substance."
+    "story": "It stinks... really bad. The floor is sticky and mushy. You see something sticking out of this disgusting substance.",
+    "img": "https://www-tc.pbs.org/wgbh/nova/assets/img/lives-of-extremophiles/image-02-large.jpg"
     },
     {
     "items":[],
-    "directions": ["left","right"],
+    "left": "7",
+    "right":"8",
     "creatures": [],
-    "story": "You come across a large underground waterfall, It appears to be a dead end but you feel a breeze coming from the direction of the waterfall"
+    "story": "You come across a large underground waterfall, It appears to be a dead end but you feel a breeze coming from the direction of the waterfall",
+    "img":"http://3.bp.blogspot.com/-4ZjO1jl4Z3g/URJoYejz6fI/AAAAAAAADH4/C6Nc0FC0udQ/s1600/Smoo+Cave+PK.jpg"
+    },
+    {
+    "items":[],
+    "left": "0",
+    "right":"0",
+    "creatures": [],
+    "story": "You find an enourmous cavern housing a pirate ship, but defiintely not like the one from the Goonies, its totally different than that.",
+    "img":"https://vignette3.wikia.nocookie.net/goonies/images/f/f0/Inferno.jpg/revision/latest?cb=20110803235640"
+    },
+    {
+    "items":[],
+    "left": "0",
+    "right":"0",
+    "creatures": [],
+    "story": "Something is sleeping... something big, you wish you brought extra underwear.",
+    "img":"https://img00.deviantart.net/b81e/i/2013/181/9/1/rock_monster_by_jbrown67-d6bfb6v.jpg"
     }
   ]
 }

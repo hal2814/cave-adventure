@@ -14,19 +14,37 @@ import { CaveService } from '../cave.service';
 export class CaveComponent implements OnInit {
   caves: FirebaseListObservable<any[]>;
   caveToDisplay;
-  count;
+  caveIndex;
+  direction;
 
   constructor(private router: Router, private caveService: CaveService) { }
 
 
   ngOnInit(){
     // this.caves = this.caveService.getCaves();
-    this.count = 0;
-    this.caveToDisplay = this.caveService.getCaveById(this.count);
+    this.caveIndex = 0;
+    this.caveToDisplay =
+    this.caveService.getCaveById(this.caveIndex);
+
+    //IMPORTANT
+    this.direction =
+    this.caveService.getCaveById(this.caveIndex).subscribe(dataLastEmittedFromObserver=>{
+      this.direction = dataLastEmittedFromObserver;
+      console.log(this.direction);
+    });
+    // this.left = caveToDisplay.left;
   };
 
   chooseDirection(number){
-    this.caveToDisplay = this.caveService.getCaveById(this.count+=number);
+    this.caveToDisplay = this.caveService.getCaveById(number);
+  }
+
+  chooseLeft(){
+    this.caveToDisplay = this.caveService.getCaveById(this.direction.left);
+  }
+
+  goBack(number){
+
   }
 
 
