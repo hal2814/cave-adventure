@@ -1,6 +1,9 @@
-<h2>The Caves</h2>
+
+<app-character></app-character>
+<h2>The Cave</h2>
 
   <h3>{{(caveToDisplay | async)?.story}}</h3>
+  <img src="{{(caveToDisplay | async)?.img}}">
   <h3>left: {{(caveToDisplay | async)?.left}}</h3>
-<button (click)="chooseDirection(-1)">go back</button>
 <button (click)="chooseLeft()">Left</button>
+<button (click)="chooseRight()">Right</button>

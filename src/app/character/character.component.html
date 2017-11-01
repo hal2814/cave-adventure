@@ -1,0 +1,7 @@
+<p>Your Character</p>
+<h2>{{(characterToDisplay | async)?.name}}</h2>
+<img class="char" src="{{(characterToDisplay | async)?.img}}">
+<h3>Health: {{(characterToDisplay | async)?.health}}</h3>
+<h3>Strength: {{(characterToDisplay | async)?.strength}}</h3>
+<h3>Armor: {{(characterToDisplay | async)?.armor}}</h3>
+<p><em>{{(characterToDisplay | async)?.story}}</em></p>

@@ -15,7 +15,7 @@ export class CaveComponent implements OnInit {
   caves: FirebaseListObservable<any[]>;
   caveToDisplay;
   caveIndex;
-  direction;
+  objectObservable;
 
   constructor(private router: Router, private caveService: CaveService) { }
 
@@ -26,21 +26,40 @@ export class CaveComponent implements OnInit {
     this.caveToDisplay =
     this.caveService.getCaveById(this.caveIndex);
 
-    //IMPORTANT
-    this.direction =
+    //IMPORTANT - in order to display as a raw object, .subscribe() must be called separately
+    //from the object to display. async unwraps the firebase object ONLY.
+    this.objectObservable =
     this.caveService.getCaveById(this.caveIndex).subscribe(dataLastEmittedFromObserver=>{
-      this.direction = dataLastEmittedFromObserver;
-      console.log(this.direction);
+      this.objectObservable = dataLastEmittedFromObserver;
+      console.log(this.objectObservable);
     });
     // this.left = caveToDisplay.left;
   };
 
-  chooseDirection(number){
-    this.caveToDisplay = this.caveService.getCaveById(number);
-  }
+  // chooseDirection(number){
+  //   this.caveToDisplay = this.caveService.getCaveById(number);
+  // }
 
   chooseLeft(){
-    this.caveToDisplay = this.caveService.getCaveById(this.direction.left);
+    this.caveIndex = this.objectObservable.left;
+    this.caveToDisplay = this.caveService.getCaveById(this.caveIndex);
+
+    this.objectObservable =
+    this.caveService.getCaveById(this.caveIndex).subscribe(dataLastEmittedFromObserver=>{
+      this.objectObservable = dataLastEmittedFromObserver;
+    });
+    console.log(this.objectObservable);
+  }
+
+  chooseRight(){
+    this.caveIndex = this.objectObservable.right;
+    this.caveToDisplay = this.caveService.getCaveById(this.caveIndex);
+
+    this.objectObservable =
+    this.caveService.getCaveById(this.caveIndex).subscribe(dataLastEmittedFromObserver=>{
+      this.objectObservable = dataLastEmittedFromObserver;
+    });
+    console.log(this.objectObservable);
   }
 
   goBack(number){

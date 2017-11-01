@@ -2,9 +2,8 @@
   <h1>{{title}}</h1>
   <div class="well">
     <div class="panel panel-head">
-      <h3>A Spooky Forest</h3>
+      <a routerlink="cave" (click)="goToCave()">Go to Cave Entrance</a>
     </div>
-  <a routerlink="cave" (click)="goToCave()">Cave Entrance</a>
   <router-outlet></router-outlet>
   </div>
 </div>
