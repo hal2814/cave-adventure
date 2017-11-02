@@ -126,8 +126,10 @@ export class ItemComponent implements OnInit {
       this.itemObservable = new Item(dataLastEmittedFromObserver.img,dataLastEmittedFromObserver.name,   dataLastEmittedFromObserver.type,dataLastEmittedFromObserver.modifier,dataLastEmittedFromObserver.clue);
       console.log(this.itemObservable);
     });
+    this.itemShow = true;
+  }
 
-    itemType = this.itemObservable.type;
+  applyItem(){
     if(this.itemObservable.type === "weapon"){
       this.strength += parseInt(this.itemObservable.modifier);
     }else if(this.itemObservable.type === "food"){
@@ -136,8 +138,6 @@ export class ItemComponent implements OnInit {
       this.armor += parseInt(this.itemObservable.modifier);
     }
     console.log(this.health);
-
-    this.itemShow = true;
   }
 
 }

@@ -9,7 +9,8 @@
     <button (click)="chooseRight()">Right</button>
 
     <div *ngIf=showChoice>
-      <button (click)="findItem()">Pick up item</button>
+      <button (click)="findItem();">Search area for items</button>
+      <button (click)="applyItem();">add item to inventory</button>
     </div>
   </div>
 
@@ -51,7 +52,7 @@
     <h3>Armor: {{(larry | async)?.armor}}</h3>
   </div></a>
 
-  <div *ngIf="showChoice" (click)="selectCharacter('larry')" class="animate-show-hide well col-md-3">
+  <div *ngIf="showChoice" class="animate-show-hide well col-md-3">
     <h2>{{(characterToDisplay | async)?.name}}</h2>
     <p><em>{{(characterToDisplay | async)?.story}}</em></p>
     <img class="char" src="{{(characterToDisplay | async)?.img}}">
