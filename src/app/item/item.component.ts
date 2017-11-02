@@ -27,6 +27,7 @@ export class ItemComponent implements OnInit {
   gram;
   timmy;
   larry;
+  characterIndex;
   health;
   strength;
   armor;
@@ -67,20 +68,30 @@ export class ItemComponent implements OnInit {
   selectCharacter(value){
     if(value==="dave"){
       this.characterToDisplay = this.dave;
+      this.characterIndex = 0;
     } else if(value==="gram"){
       this.characterToDisplay = this.gram;
+      this.characterIndex = 1;
     } else if(value === "timmy"){
       this.characterToDisplay = this.timmy;
+      this.characterIndex = 2;
     }else if(value === "larry"){
       this.characterToDisplay = this.larry;
+      this.characterIndex = 3;
     }
+    this.itemService.getCharacterById(this.characterIndex).subscribe(dataLastEmittedFromObserver=>{
+      this.characterObservable = dataLastEmittedFromObserver;
+    });
+    console.log(this.characterObservable);
+    this.health = parseInt(this.characterObservable.health);
+    this.strength = parseInt(this.characterObservable.strength);
+    this.armor = parseInt(this.characterObservable.armor);
   }
 
   chooseLeft(){
     this.caveIndex = this.caveObservable.left;
     this.caveToDisplay = this.itemService.getCaveById(this.caveIndex);
 
-    this.caveObservable =
     this.itemService.getCaveById(this.caveIndex).subscribe(dataLastEmittedFromObserver=>{
       this.caveObservable = dataLastEmittedFromObserver;
     });
@@ -91,20 +102,18 @@ export class ItemComponent implements OnInit {
     this.caveIndex = this.caveObservable.right;
     this.caveToDisplay = this.itemService.getCaveById(this.caveIndex);
 
-    this.caveObservable =
     this.itemService.getCaveById(this.caveIndex).subscribe(dataLastEmittedFromObserver=>{
       this.caveObservable = dataLastEmittedFromObserver;
     });
     console.log(this.caveObservable);
   }
 
-
   findItem(){
-    debugger;
     let item1 = this.caveObservable.items[0];
     let item2 = this.caveObservable.items[1];
     let rand = Math.floor((Math.random() * 4) + 1);
     let chosenItem;
+    let itemType;
     if(rand === 1){
       this.itemToDisplay = this.itemService.getItemById(item1);
       chosenItem = item1;
@@ -113,19 +122,20 @@ export class ItemComponent implements OnInit {
       chosenItem = item2;
     }
 
-    this.itemObservable =
     this.itemService.getItemById(chosenItem).subscribe(dataLastEmittedFromObserver=>{
-      this.itemObservable = dataLastEmittedFromObserver;
+      this.itemObservable = new Item(dataLastEmittedFromObserver.img,dataLastEmittedFromObserver.name,   dataLastEmittedFromObserver.type,dataLastEmittedFromObserver.modifier,dataLastEmittedFromObserver.clue);
+      console.log(this.itemObservable);
     });
-    console.log(this.itemObservable);
 
+    itemType = this.itemObservable.type;
     if(this.itemObservable.type === "weapon"){
-      this.strength += this.itemObservable.modifier;
+      this.strength += parseInt(this.itemObservable.modifier);
     }else if(this.itemObservable.type === "food"){
-      this.health += this.itemObservable.modifier;
+      this.health += parseInt(this.itemObservable.modifier);
     }else if(this.itemObservable.type === "armor"){
-      this.armor += this.itemObservable.modifier;
+      this.armor += parseInt(this.itemObservable.modifier);
     }
+    console.log(this.health);
 
     this.itemShow = true;
   }

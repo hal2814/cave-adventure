@@ -4,5 +4,6 @@ export class Item {
     public name: string,
     public type: string,
     public modifier: number,
-    public clue: string) {};
+    public clue: string
+    ) {};
 }
