@@ -16,6 +16,7 @@ export class CaveComponent implements OnInit {
   caveToDisplay;
   caveIndex;
   objectObservable;
+  // show = false;
 
   constructor(private router: Router, private caveService: CaveService) { }
 
@@ -33,6 +34,7 @@ export class CaveComponent implements OnInit {
       this.objectObservable = dataLastEmittedFromObserver;
       console.log(this.objectObservable);
     });
+
     // this.left = caveToDisplay.left;
   };
 
@@ -62,9 +64,9 @@ export class CaveComponent implements OnInit {
     console.log(this.objectObservable);
   }
 
-  goBack(number){
-
-  }
+  // showCave(){
+  //
+  // }
 
 
   // goToDetailPage(clickedCave: Cave) {

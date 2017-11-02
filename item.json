@@ -33,7 +33,7 @@
     "name": "Filth Filled Boots",
     "type": "armor",
     "modifier": "2",
-    "clue":"Its more rust than pick..."  },
+    "clue":"Why am I even putting these on?"  },
     {
     "img":"http://www.pngall.com/wp-content/uploads/2016/09/Rib-Cage-Free-Download-PNG.png",
     "name": "a human ribcage",
@@ -45,7 +45,13 @@
     "name": "Mountain Dew",
     "type": "food",
     "modifier": "7",
-    "clue":"'It'll tickle yore innards' -Willy The Hillbilly"  }
+    "clue":"'It'll tickle yore innards' -Willy The Hillbilly"  },
+    {
+    "img":"https://camo.githubusercontent.com/1c25253b83b558f9b93f4f39e8b964d2766b7bbf/687474703a2f2f6d656469612e74756d626c722e636f6d2f74756d626c725f6c6b77356536414e6453317166377131732e706e67",
+    "name": "Nothing",
+    "type": "food",
+    "modifier": "0",
+    "clue":"a big ol' bunch of nothing"  }
   ],
 
   "characters": [{
@@ -109,7 +115,8 @@
   ],
 
   "caves": [{
-    "items":[],
+    "name": "Cave Entrance",
+    "items":[8,8],
     "left": "1",
     "right":"2",
     "creatures": [],
@@ -117,7 +124,8 @@
     "img":"http://1.bp.blogspot.com/-Pn1Z8IvSWnI/UrlT0tt_ktI/AAAAAAAC_h4/fG3AKEFJC_0/s1600/merlin0455.jpg"
     },
     {
-    "items":[],
+    "name": "Skeleton room",
+    "items":[0,6],
     "left": "3",
     "right":"4",
     "creatures": [],
@@ -125,7 +133,8 @@
     "img": "https://cdnb.artstation.com/p/assets/images/images/000/322/299/large/simon-fetscher-skeleton-cave.jpg?1443926953"
     },
     {
-    "items":[],
+    "name": "A dark room",
+    "items":[7,5],
     "left": "6",
     "right":"5",
     "creatures": [],
@@ -133,7 +142,8 @@
     "img":"https://adventuresofacouchsurfer.files.wordpress.com/2011/05/img_1664-valentine-cave.jpg"
     },
     {
-    "items":[],
+    "name": "Strange nest",
+    "items":[1,7],
     "left": "8",
     "right":"7",
     "creatures": [],
@@ -141,7 +151,8 @@
     "img":"https://img00.deviantart.net/feef/i/2005/338/6/c/nargh_the_cave_dweller_by_alex16.jpg"
     },
     {
-    "items":[],
+    "name": "Treasure room",
+    "items":[4,3],
     "left": "7",
     "right":"8",
     "creatures": [],
@@ -149,7 +160,8 @@
     "img":"https://www.yellowstonepark.com/.image/t_share/MTQ3MzIwMDY5MDUwNzM4MTI2/treasure-chest-cave_adobe_680.jpg"
     },
     {
-    "items":[],
+    "name": "Squishy room",
+    "items":[5,7],
     "left": "8",
     "right":"7",
     "creatures": [],
@@ -157,7 +169,8 @@
     "img": "https://www-tc.pbs.org/wgbh/nova/assets/img/lives-of-extremophiles/image-02-large.jpg"
     },
     {
-    "items":[],
+    "name": "Underground deluge",
+    "items":[2,6],
     "left": "7",
     "right":"8",
     "creatures": [],
@@ -165,7 +178,8 @@
     "img":"http://3.bp.blogspot.com/-4ZjO1jl4Z3g/URJoYejz6fI/AAAAAAAADH4/C6Nc0FC0udQ/s1600/Smoo+Cave+PK.jpg"
     },
     {
-    "items":[],
+    "name": "Pirate ship (#notgoonies)",
+    "items":[4,2],
     "left": "0",
     "right":"0",
     "creatures": [],
@@ -173,7 +187,8 @@
     "img":"https://vignette3.wikia.nocookie.net/goonies/images/f/f0/Inferno.jpg/revision/latest?cb=20110803235640"
     },
     {
-    "items":[],
+    "name": "Cave hippo",
+    "items":[1,0],
     "left": "0",
     "right":"0",
     "creatures": [],

@@ -1,6 +1,16 @@
 <div class="row">
   <div class="col-md-6" *ngIf="showChoice">
-    <app-cave></app-cave>
+    <h2>{{(caveToDisplay | async)?.name}}</h2>
+
+      <h3>{{(caveToDisplay | async)?.story}}</h3>
+      <img src="{{(caveToDisplay | async)?.img}}">
+      <h3>left: {{(caveToDisplay | async)?.left}}</h3>
+    <button (click)="chooseLeft()">Left</button>
+    <button (click)="chooseRight()">Right</button>
+
+    <div *ngIf=showChoice>
+      <button (click)="findItem()">Pick up item</button>
+    </div>
   </div>
 
   <h2>Choose Your Character</h2>
@@ -41,12 +51,19 @@
     <h3>Armor: {{(larry | async)?.armor}}</h3>
   </div></a>
 
-  <div *ngIf="showChoice" class="animate-show-hide well col-md-3" value="larry">
+  <div *ngIf="showChoice" class="animate-show-hide well col-md-3">
     <h2>{{(characterToDisplay | async)?.name}}</h2>
     <p><em>{{(characterToDisplay | async)?.story}}</em></p>
     <img class="char" src="{{(characterToDisplay | async)?.img}}">
     <h3>Health: {{(characterToDisplay | async)?.health}}</h3>
     <h3>Strength: {{(characterToDisplay | async)?.strength}}</h3>
     <h3>Armor: {{(characterToDisplay | async)?.armor}}</h3>
+  </div>
+
+  <div *ngIf="itemShow" class="animate-show-hide well col-md-3">
+    <h2>{{(itemToDisplay | async)?.name}}</h2>
+    <p><em>{{(itemToDisplay | async)?.clue}}</em></p>
+    <img class="char" src="{{(itemToDisplay | async)?.img}}">
+    <h3>Type: {{(itemToDisplay | async)?.type}}</h3>
   </div>
 </div>

@@ -21,6 +21,7 @@ export class CharacterComponent implements OnInit {
   objectObservable;
   show = true;
   showChoice = false;
+  items = [];
 
   constructor(private router: Router, private characterService: CharacterService) { }
 

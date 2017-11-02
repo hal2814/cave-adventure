@@ -10,6 +10,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
 import { CaveComponent } from './cave/cave.component';
 import { CharacterComponent } from './character/character.component';
+import { ItemComponent } from './item/item.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -23,7 +24,8 @@ export const firebaseConfig = {
     AppComponent,
     AdminComponent,
     CaveComponent,
-    CharacterComponent
+    CharacterComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,

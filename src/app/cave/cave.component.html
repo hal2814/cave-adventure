@@ -1,6 +1,6 @@
 
-<app-character></app-character>
-<h2>The Cave</h2>
+
+<h2>{{(caveToDisplay | async)?.name}}</h2>
 
   <h3>{{(caveToDisplay | async)?.story}}</h3>
   <img src="{{(caveToDisplay | async)?.img}}">
