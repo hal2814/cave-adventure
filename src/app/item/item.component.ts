@@ -35,6 +35,8 @@ export class ItemComponent implements OnInit {
   showChoice = false;
   show = true;
   itemShow = false;
+  searchShow = true;
+  addShow = true;
 
   constructor(private router: Router, private itemService: ItemService) { }
 
@@ -96,6 +98,8 @@ export class ItemComponent implements OnInit {
       this.caveObservable = dataLastEmittedFromObserver;
     });
     console.log(this.caveObservable);
+    this.searchShow = true;
+    this.addShow = true;
   }
 
   chooseRight(){
@@ -106,6 +110,8 @@ export class ItemComponent implements OnInit {
       this.caveObservable = dataLastEmittedFromObserver;
     });
     console.log(this.caveObservable);
+    this.searchShow = true;
+    this.addShow = true;
   }
 
   findItem(){
@@ -127,6 +133,8 @@ export class ItemComponent implements OnInit {
       console.log(this.itemObservable);
     });
     this.itemShow = true;
+    this.searchShow = false;
+
   }
 
   applyItem(){
@@ -138,6 +146,7 @@ export class ItemComponent implements OnInit {
       this.armor += parseInt(this.itemObservable.modifier);
     }
     console.log(this.health);
+    this.addShow = false;
   }
 
 }

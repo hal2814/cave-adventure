@@ -9,8 +9,8 @@
     <button (click)="chooseRight()">Right</button>
 
     <div *ngIf=showChoice>
-      <button (click)="findItem();">Search area for items</button>
-      <button (click)="applyItem();">add item to inventory</button>
+      <button *ngIf="searchShow" (click)="findItem();">Search area for items</button>
+      <button *ngIf="addShow" (click)="applyItem();">add item to inventory</button>
     </div>
   </div>
 
