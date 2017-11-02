@@ -1,6 +1,7 @@
 export class Character {
   public items = [];
   constructor(
+    public img: string,
     public name: string,
     public story: string,
     public health: number,
